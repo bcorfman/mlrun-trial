@@ -9,11 +9,13 @@ setup:
 
 install:
 	$(HOME)/.rye/shims/rye sync --no-lock --no-dev
+	$(HOME)/.rye/shims/rye run mlrun config set -a http://localhost:8080
 
 devinstall:
 	$(HOME)/.rye/shims/rye pin $(PYTHON_VERSION)
 	$(HOME)/.rye/shims/rye add ipython pytest pytest-cov --dev
 	$(HOME)/.rye/shims/rye sync
+	$(HOME)/.rye/shims/rye run mlrun config set -a http://localhost:8080
 
 test:
 	$(HOME)/.rye/shims/rye run pytest

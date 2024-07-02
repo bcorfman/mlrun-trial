@@ -8,7 +8,8 @@
             "name": "Python Debugger: Module",
             "type": "debugpy",
             "request": "launch",
-            "module": "main"
+            "module": "main",
+            "envFile": "${workspaceFolder}/mlrun.env",
         },
         {
             "name": "Python: Debug Unit Tests",
@@ -17,6 +18,7 @@
             "purpose": ["debug-test"],
             "console": "integratedTerminal",
             "justMyCode": false,
+            "envFile": "${workspaceFolder}/mlrun.env",
         }
     ],
     "python.testing.pytestArgs": [

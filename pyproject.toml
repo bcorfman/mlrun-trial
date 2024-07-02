@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Demo project for using the MLRun project"
 authors = [{name = "Brandon Corfman", email = "h9tbgnbbk@privaterelay.appleid.com"}]
 dependencies = [
+    "mlrun>=1.6.3",
 ]
 license = "MIT"
 readme = "README.md"
