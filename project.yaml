@@ -1,0 +1,23 @@
+kind: project
+metadata:
+  name: quick-tutorial-bcorfman
+  created: '2024-07-02T22:56:25.720029'
+spec:
+  functions:
+  - url: data-prep.py
+    name: data-prep
+    kind: job
+    image: mlrun/mlrun
+    handler: breast_cancer_generator
+  workflows: []
+  artifacts: []
+  conda: ''
+  source: git://github.com/bcorfman/mlrun-trial.git#refs/heads/config
+  origin_url: git://github.com/bcorfman/mlrun-trial.git#refs/heads/config
+  desired_state: online
+  build:
+    commands: []
+    requirements: []
+  custom_packagers: []
+status:
+  state: online

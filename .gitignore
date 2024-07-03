@@ -60,6 +60,9 @@ cover/
 *.mo
 *.pot
 
+# Rye config
+.python-version
+
 # Django stuff:
 *.log
 local_settings.py
@@ -144,3 +147,10 @@ cython_debug/
 
 # Mac files
 .DS_Store
+
+# Data directories
+auto-trainer-train/
+data-prep-breast-cancer-generator/
+
+# Data files
+*.pkl

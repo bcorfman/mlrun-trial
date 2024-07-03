@@ -7,6 +7,9 @@ PYTHON_VERSION ?= 3.9
 setup:
 	curl -sSf https://rye-up.com/get | RYE_NO_AUTO_INSTALL=1 RYE_INSTALL_OPTION="--yes" bash
 
+compose:
+	docker-compose -f compose.yaml up -d
+
 install:
 	$(HOME)/.rye/shims/rye sync --no-lock --no-dev
 	$(HOME)/.rye/shims/rye run mlrun config set -a http://localhost:8080
@@ -21,6 +24,7 @@ test:
 	$(HOME)/.rye/shims/rye run pytest
 
 run: 
+	docker
 	$(HOME)/.rye/shims/rye run python main.py
 
 lint:
