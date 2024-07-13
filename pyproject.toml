@@ -5,12 +5,12 @@ description = "Demo project for using the MLRun project"
 authors = [{name = "Brandon Corfman", email = "h9tbgnbbk@privaterelay.appleid.com"}]
 dependencies = [
     "pyyaml==5.3",
-    "mlrun>=1.6.4",
+    "mlrun~=1.6.4",
     "scikit-learn~=1.4.0",
     "numpy~=1.26",
-    "protobuf==3.19.6",
     "plotly>=5.22.0",
     "graphviz>=0.20.3",
+    "protobuf==3.20.1",
 ]
 license = "MIT"
 readme = "README.md"
